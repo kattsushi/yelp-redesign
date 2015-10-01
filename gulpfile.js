@@ -51,7 +51,7 @@ gulp.task('bower_css', function () {
  * description: launches server
  */
 // Static Server + watching scss/html files
-gulp.task('serve', ['html','imagemin','js','sass'], function() {
+gulp.task('serve', ['html','imagemin','data','fonts','js','sass'], function() {
 
     browserSync.init({
         server: "./build"
