@@ -28,7 +28,7 @@ If you aren't a fan of the design, at least its a great Angular build system. ;-
 	```bash
 	$ gulp
 	```
-![image](http://stephenweber.io/yelp-redesign/gulp.gif)
+![image](http://stephenweber.io/yelp-redesign/docs/gulp.gif)
 
 ## Easy Installation
 
