@@ -30,27 +30,7 @@ var componentPaths = {
 
   lodash : paths.bower_components+'/lodash/lodash.min.js',
   angularSimpleLogger : paths.bower_components+'/angular-simple-logger/dist/angular-simple-logger.min.js',
-  angularGoogleMaps : paths.bower_components+'/angular-google-maps/dist/angular-google-maps.min.js',
-
-  oAuthSignature : paths.bower_components+'/oauth-signature/dist/oauth-signature.min.js',
-
-  // datatables : paths.bower_components+'/datatables/media/js/jquery.dataTables.js',
-
-  // moment : paths.bower_components+'/moment/min/moment.min.js',
-
-  // d3 : paths.bower_components+'/d3/d3.js',
-  // rickshaw : paths.bower_components+'/rickshaw/rickshaw.js',
-  // angularRickshaw : paths.bower_components+'/angular-rickshaw/rickshaw.js',
-  // rickshawcss : paths.bower_components+'/rickshaw/rickshaw.css',
-
-  // datatablescss : paths.bower_components+'/datatables/media/css/jquery.dataTables.css',
-  // datatablescsstheme : paths.bower_components+'/datatables/media/css/jquery.dataTables_themeroller.css',
-  // datatablesbootstrap : paths.vendor+'/datatables_plugins/integration/bootstrap/3/dataTables.bootstrap.js',
-  // datatablesbootstrapcss : paths.vendor+'/datatables_plugins/integration/bootstrap/3/dataTables.bootstrap.css',
-  // datatablescolreorder : paths.bower_components+'/datatables-colreorder/js/jquery.dataTables.js',
-  // datatablescolreordercss : paths.bower_components+'/datatables-colreorder/css/dataTables.colReorder.css',
-  // datatablestabletools : paths.bower_components+'/datatables-tabletools/js/dataTables.tableTools.js',
-  // datatablestabletoolscss : paths.bower_components+'/datatables-tabletools/css/dataTables.tableTools.css'
+  angularGoogleMaps : paths.bower_components+'/angular-google-maps/dist/angular-google-maps.min.js'
 };
 
 /**
@@ -60,13 +40,7 @@ var componentPaths = {
 gulp.task('bower_css', function () {
   return gulp.src([
       './'+componentPaths.rickshawcss,
-      './'+componentPaths.angularMaterialCSS,
-      // './'+componentPaths.bootstrapSwitchCSS,
-      // './'+componentPaths.datatablescss,
-      // './'+componentPaths.datatablesbootstrapcss,
-      // './'+componentPaths.datatablescsstheme,
-      // './'+componentPaths.datatablescolreordercss,
-      // './'+componentPaths.datatablestabletoolscss
+      './'+componentPaths.angularMaterialCSS
     ])
     .pipe(concat('_bower_components.scss'))
     .pipe(gulp.dest('./'+paths.src+'/sass/'));
@@ -77,7 +51,7 @@ gulp.task('bower_css', function () {
  * description: launches server
  */
 // Static Server + watching scss/html files
-gulp.task('serve', ['js','sass'], function() {
+gulp.task('serve', ['html','imagemin','js','sass'], function() {
 
     browserSync.init({
         server: "./build"
@@ -106,17 +80,6 @@ gulp.task('serve', ['js','sass'], function() {
       paths.src+'/app/views/*.html'
     ],['html']).on('change', browserSync.reload);
 });
-
-/**
- * $ gulp copy fonts
- * description: Compile sass into CSS & auto-inject into browsers
- */
-// gulp.task('sass', function() {
-//     return gulp.src("app/scss/*.scss")
-//         .pipe(sass())
-//         .pipe(gulp.dest("app/css"))
-//         .pipe(browserSync.stream());
-// });
 
 /**
  * $ gulp sass
@@ -187,23 +150,10 @@ gulp.task('js', function () {
     componentPaths.angularAnimate,
     componentPaths.angularAria,
     componentPaths.angularMaterial,
-    // componentPaths.angularBootstrap,
     componentPaths.angularUIRouter,
-    // componentPaths.bootstrap,
-    // componentPaths.bootstrapSwitch,
-    // componentPaths.angularBootstrapSwitch,
-    // componentPaths.d3,
-    // componentPaths.rickshaw,
-    // componentPaths.angularRickshaw,
     componentPaths.lodash,
     componentPaths.angularSimpleLogger,
     componentPaths.angularGoogleMaps,
-    componentPaths.oAuthSignature,
-    // componentPaths.datatables,
-    // componentPaths.datatablesbootstrap,
-    // componentPaths.datatablescolreorder,
-    // componentPaths.datatablestabletools,
-    // componentPaths.moment,
     './'+paths.src+'/app/libs/*.js',
     './'+paths.src+'/app/app.js',
     './'+paths.src+'/app/routes.js',
