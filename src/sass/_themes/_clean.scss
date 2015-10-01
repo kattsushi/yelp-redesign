@@ -1,0 +1,48 @@
+$primary-color-text-light: 	#fff;
+$primary-color-dark:   		#F9F9F9;
+$primary-color:        		#F9F9F9;
+$primary-color-light:    	#fff;
+$primary-color-text:     	#9E9E9E;
+$accent-color:           	#FF2713;
+$accent-color-text:         #BD3023;
+$secondary-accent-color: 	#D02414;
+$secondary-text-color:   	#000;
+$divider-color:          	rgb(221, 221, 221);
+
+md-sidenav.md-default-theme {
+	background-color: $primary-color-light;
+	color: $accent-color-text;
+	
+	.md-toolbar-tools {
+		background-color: $primary-color;
+		border-bottom: 1px solid $divider-color;
+	}
+
+	md-icon {
+		color: $primary-color-text;
+	}
+}
+
+md-toolbar:not(.md-menu-toolbar) {
+	background-color: $primary-color-light;
+}
+
+md-toolbar-tools {
+	color: $primary-color-text;
+}
+
+md-menu-item > .md-button {
+	color: $primary-color-text;
+}
+
+.md-default-theme {
+	color: $primary-color-text;
+}
+
+a.md-button.md-fab, .md-button.md-fab {
+	background-color: $accent-color !important;
+}
+
+a.md-button.md-fab:hover, .md-button.md-fab:hover {
+	background-color: $secondary-accent-color !important;
+}

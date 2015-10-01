@@ -1,0 +1,274 @@
+#map-view {
+	position: relative;
+	// width: calc(100vw - 254px);
+	width: 100%;
+	height: 100vh;
+
+	.angular-google-map-container { 
+		min-height: 300px; 
+		min-width: 300px;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	#searchform {
+		position: absolute;
+		top: 10px;
+		left: 20px;
+		z-index: 10;
+
+		#yelp-logo {
+			width: 88px;
+			height: 40px;
+			margin-bottom: 10px;
+		}
+
+		md-autocomplete {
+			max-width: 400px;
+			min-width: 300px;
+
+			input:not(.md-input) {
+				color: rgba(0,0,0,0.54);
+			}
+		}
+
+	}
+
+	#current-marker-card {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		max-width: 400px;
+		max-height: 400px;
+		height: 350px;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+
+		#add-btn {
+			position: absolute;
+			top: 132px;
+			right: 10px;
+		}
+
+		#distance {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			color: #fff;
+			font-size: 24px;
+			font-weight: 800;
+		}
+
+		#rating {
+			position: absolute;
+			top: 180px;
+			left: 20px;
+		    width: 84px;
+		    height: 17px;
+		}
+
+		#review-count {
+			position: absolute;
+			top: 178px;
+			left: 115px;
+		}
+
+		.md-card-header {
+			position: relative;
+			height: 200px;
+			background: url('../img/paris.jpg') center / cover;
+			opacity: 1;
+			-webkit-transition: all 1.5s ease-in-out;
+			-moz-transition: all 1.5s ease-in-out;
+			-o-transition: all 1.5s ease-in-out;
+			transition: all 1.5s ease-in-out;
+
+			.md-card-title {
+				position: absolute;
+				bottom: 0px;
+				left: 20px;
+				color: #fff;
+				margin-bottom: 10px;
+				margin-left: 0px;
+				opacity: 1;
+				-webkit-transition: all 1.5s ease-in-out;
+				-moz-transition: all 1.5s ease-in-out;
+				-o-transition: all 1.5s ease-in-out;
+				transition: all 1.5s ease-in-out;
+			}
+
+		}
+
+		md-card-content {
+			padding-top: 40px;
+			opacity: 1;
+			-webkit-transition: all 2s ease-in-out;
+			-moz-transition: all 2s ease-in-out;
+			-o-transition: all 2s ease-in-out;
+			transition: all 2s ease-in-out;
+		}
+
+		.md-actions {
+			.md-button {
+				margin-right: 10px;
+
+				md-icon {
+					margin-right: 10px;
+				}
+
+			}
+		}
+
+	}
+
+	#current-marker-card.ng-hide {
+		height: 0;
+
+		.md-card-header {
+			opacity: 0;
+
+			.md-card-title {
+				margin-left: -50px;
+				opacity: 0;
+			}
+
+		}
+
+		md-card-content {
+			opacity: 0;
+		}
+
+	}
+
+	#bookmarked-marker-container {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		background-color: $primary-color;
+		width: 300px;
+		max-height: 400px;
+
+		.md-subheader .md-subheader-inner {
+			padding: 5px 0 10px 10px;
+			text-align: center;
+			width: 100%;
+		}
+
+		.md-toolbar-tools {
+			background-color: #FAFAFA;
+			color: rgba(0, 0, 0, 0.54);
+		}
+
+		md-list-item {
+			margin-left: 0;
+			opacity: 1;
+			-webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+			-moz-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+			-o-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+			transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+			button {
+				width: 40px;
+			    height: 40px;
+			    min-width: 40px;
+			    min-height: 40px;
+			}
+
+		}
+	
+		md-list-item.ng-enter {
+			opacity: 0;
+			margin-left: 200px;
+		}
+		
+		md-list-item.ng-leave {
+			opacity: 1;
+			margin-left: 0px;
+		}
+
+		md-list-item.ng-leave.ng-leave-active {
+			opacity: 0;
+			margin-left: 200px;
+		}
+
+	}
+
+	#bookmarked-marker-container.ng-hide {
+		opacity: 0;
+	}
+
+}
+
+@media (max-width: 600px) {
+	#map-view {
+		width: 100%;
+		height: 100%;
+
+		#mobile-map-card {
+			width: 100%;
+			height: 400px;
+			padding-right: 15px;
+
+			.angular-google-map-container {
+				width: 100%;
+				height: 100%;
+				min-height: auto;
+	    		min-width: auto;
+			}
+		}
+
+		#bookmarked-marker-container {
+		    position: relative;
+		    top: initial;
+		    width: 100%;
+		    right: initial;
+		}
+
+		#current-marker-card {
+			position: initial;
+		    top: initial;
+		    left: initial;
+		    bottom: initial;
+		    width: 100%;
+		    max-width: 100%;
+		}
+
+		#searchform {
+			position: initial;
+		    top: initial;
+		    left: initial;
+		    width: 100%;
+		    margin-top: 10px;
+		    margin-left: 10px;
+		    margin-bottom: 10px;
+
+		    md-autocomplete {
+		    	width: 100%;
+		    	max-width: 100%;
+		    }
+
+		}
+
+	}
+}
+
+.md-autocomplete-suggestions li {
+	height: 80px;
+	width: 100%;
+
+	.result-row {
+		margin-bottom: 20px;
+		width: 100%;
+		height: 30px;
+		float: left;
+		font-style: 14px;
+		color: rgba(0,0,0,0.54);
+	}
+
+	#capital-row {
+		font-size: 18px;
+	}
+
+}

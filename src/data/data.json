@@ -1,0 +1,68 @@
+{
+    "region": {
+        "span": {
+            "latitude_delta": 0.0, 
+            "longitude_delta": 0.0
+        }, 
+        "center": {
+            "latitude": 33.833439, 
+            "longitude": -117.921087
+        }
+    }, 
+    "total": 9, 
+    "businesses": [
+        {
+            "is_claimed": true, 
+            "rating": 3.5, 
+            "mobile_url": "http://m.yelp.com/biz/umami-burger-anaheim", 
+            "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png", 
+            "review_count": 921, 
+            "name": "Umami Burger", 
+            "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png", 
+            "url": "http://www.yelp.com/biz/umami-burger-anaheim", 
+            "is_closed": false, 
+            "id": "umami-burger-anaheim", 
+            "phone": "(714)991-8626", 
+            "snippet_text": "This was a great overall experience with fantastic food and a casual, relaxed atmosphere. The truffle fries were amazing and had a light topping of melted...", 
+            "image_url": "img/umami.jpg", 
+            "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/fL2_KV0P1Xmk4x2Cde03yw/ms.jpg", 
+            "display_phone": "+1-714-991-8626", 
+            "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png", 
+            "menu_provider": "yelp", 
+            "menu_date_updated": 1442344232, 
+            "categories": [
+                [
+                    "Burgers", 
+                    "burgers"
+                ], 
+                [
+                    "American (New)", 
+                    "newamerican"
+                ], 
+                [
+                    "Gastropubs", 
+                    "gastropubs"
+                ]
+            ], 
+            "location": {
+                "distance":2,
+                "city": "Anaheim", 
+                "display_address": [
+                    "338 S Anaheim Blvd", 
+                    "Anaheim, CA 92805"
+                ], 
+                "geo_accuracy": 9.5, 
+                "postal_code": "92805", 
+                "country_code": "US", 
+                "address": [
+                    "338 S Anaheim Blvd"
+                ], 
+                "coordinate": {
+                    "latitude": 33.8326929289156, 
+                    "longitude": -117.912641193932
+                }, 
+                "state_code": "CA"
+            }
+        }
+    ]
+}
