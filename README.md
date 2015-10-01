@@ -28,6 +28,7 @@ If you aren't a fan of the design, at least its a great Angular build system. ;-
 	```bash
 	$ gulp
 	```
+![image](http://stephenweber.io/yelp-redesign/gulp.gif)
 
 ## Easy Installation
 
@@ -52,15 +53,8 @@ If you aren't a fan of the design, at least its a great Angular build system. ;-
 	$ gulp
 	```
 
-## Libraries
-![Angular](http://stephenweber.io/yelp-redesign/docs/angular.png)
-![Bower](http://stephenweber.io/yelp-redesign/docs/bower.png)
-
-![SASS](http://stephenweber.io/yelp-redesign/docs/sass.png)
-![Material Design](http://stephenweber.io/yelp-redesign/docs/material_design.png)
-
-![Gulp](http://stephenweber.io/yelp-redesign/docs/gulp.png)
-![Node Package Manager](http://stephenweber.io/yelp-redesign/docs/npm.png)
+## Libraries/Tools/Tech
+![Angular](http://stephenweber.io/yelp-redesign/docs/angular.png)![Bower](http://stephenweber.io/yelp-redesign/docs/bower.png)![SASS](http://stephenweber.io/yelp-redesign/docs/sass.png)![Material Design](http://stephenweber.io/yelp-redesign/docs/material_design.png)![CSS3](http://stephenweber.io/yelp-redesign/docs/css3.png)![Browser Sync](http://stephenweber.io/yelp-redesign/docs/browser_sync.png)![Node Package Manager](http://stephenweber.io/yelp-redesign/docs/npm.png)![Gulp](http://stephenweber.io/yelp-redesign/docs/gulp.png)![Node Package Manager](http://stephenweber.io/yelp-redesign/docs/npm.png)
 
 * [Angular Material](https://material.angularjs.org)
 * [Angular](https://angularjs.org)
