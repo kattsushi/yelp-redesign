@@ -1,7 +1,7 @@
 {
   "name": "sweber",
   "version": "1.0.0",
-  "description": "Calamp DeviceOutlook Client ",
+  "description": "Yelp Redesign",
   "main": "index.js",
   "devDependencies": {
     "body-parser": "^1.13.1",
@@ -20,7 +20,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Stephen Weber <sweber@calamp.com>",
+  "author": "Stephen Weber <me@stephenweber.io>",
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.0",
